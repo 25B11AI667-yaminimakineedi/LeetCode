@@ -5,7 +5,7 @@ class Solution:
             if i==len(nums):
                 if nums not in result:
                     result.append(nums.copy())
-                    return
+                return
             for j in range(i,len(nums)):
                 nums[i],nums[j]=nums[j],nums[i]
                 swap_digits(i+1)
