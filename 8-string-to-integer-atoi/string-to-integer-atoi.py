@@ -10,6 +10,7 @@ class Solution:
             sign=-1
             i+=1
         if x[0]=="+":
+            sign=1
             i+=1
         while i<len(x) and x[i].isdigit():
             num=num*10+int(x[i])
